@@ -21,6 +21,10 @@ ul {
 	padding: 0;
 }
 
+.fa-plus {
+	float: right;
+}
+
 input {
 	color: #2980b9;
 	box-sizing: border-box;
@@ -28,6 +32,7 @@ input {
 	background-color: #f7f7f7;
 	width: 100%;
 	padding: 13px 13px 13px 20px;
+	border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus {
@@ -57,4 +62,21 @@ li:nth-child(2n) {
 .completed {
 	color: gray;
 	text-decoration: line-through;
+}
+
+span {
+	background-color: #E74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: #fff;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	opacity: 1.0;
+	width: 40px;
 }
